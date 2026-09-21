@@ -1,0 +1,81 @@
+:root {
+  /* Light Theme (Default) */
+  --ink: #16202B;            /* teks utama */
+  --ink-soft: #5B6776;       /* teks sekunder */
+  --paper: #F1F4F8;          /* latar halaman */
+  --surface: #FFFFFF;        /* panel dan input */
+  --line: #DCE2EA;           /* garis dan border */
+  --cobalt: #2B4FE0;         /* aksen utama, pesan pengguna, tombol utama */
+  --cobalt-hover: #2240BD;   /* hover tombol utama */
+  --cobalt-soft: #E6ECFF;    /* latar aksen lembut, fokus */
+  --strong: #1F8A5B;         /* unsur kuat / hijau */
+  --strong-bg: #E8F6EF;      /* background aksen kuat */
+  --gap: #C9820A;            /* unsur sedang / kuning */
+  --gap-bg: #FDF4E7;         /* background aksen gap */
+  --weak: #C2412D;           /* unsur lemah / merah / error */
+  --weak-bg: #FDEDEA;        /* background aksen lemah/error */
+
+  /* Tipografi */
+  --font-ui: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-report: "Newsreader", Georgia, "Times New Roman", serif;
+
+  /* Skala tipe */
+  --t-xs: 0.8125rem;   /* 13px */
+  --t-sm: 0.875rem;    /* 14px */
+  --t-md: 1rem;        /* 16px, isi chat */
+  --t-lg: 1.25rem;     /* 20px */
+  --t-xl: 1.75rem;     /* 28px */
+  --t-display: 2.75rem;/* 44px, skor dan huruf STAR */
+
+  /* Bentuk */
+  --r-field: 8px;      /* input, tombol */
+  --r-panel: 14px;     /* panel besar */
+  --r-bubble: 16px;    /* gelembung chat, sudut ekor 4px */
+  --r-pill: 999px;     /* chip dan status */
+
+  /* Bayangan */
+  --shadow-float: 0 8px 24px rgba(22, 32, 43, 0.10);
+  --shadow-subtle: 0 2px 8px rgba(22, 32, 43, 0.04);
+}
+
+/* Explicit Dark Mode */
+[data-theme="dark"] {
+  --ink: #E4E8ED;
+  --ink-soft: #9CA3B0;
+  --paper: #0B0F14;
+  --surface: #151B23;
+  --line: #26303D;
+  --cobalt: #4B77F2;
+  --cobalt-hover: #638BF7;
+  --cobalt-soft: #18243E;
+  --strong: #22C55E;
+  --strong-bg: #0C2819;
+  --gap: #F59E0B;
+  --gap-bg: #291C05;
+  --weak: #EF4444;
+  --weak-bg: #2B0D10;
+  --shadow-float: 0 8px 28px rgba(0, 0, 0, 0.5);
+  --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* System preference auto-detect when no theme set */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ink: #E4E8ED;
+    --ink-soft: #9CA3B0;
+    --paper: #0B0F14;
+    --surface: #151B23;
+    --line: #26303D;
+    --cobalt: #4B77F2;
+    --cobalt-hover: #638BF7;
+    --cobalt-soft: #18243E;
+    --strong: #22C55E;
+    --strong-bg: #0C2819;
+    --gap: #F59E0B;
+    --gap-bg: #291C05;
+    --weak: #EF4444;
+    --weak-bg: #2B0D10;
+    --shadow-float: 0 8px 28px rgba(0, 0, 0, 0.5);
+    --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+}

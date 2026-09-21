@@ -1,0 +1,21 @@
+# Macro data overrides for Indonesia (used if BPS/BI API is unavailable)
+bi_rate:
+  value: 6.00
+  unit: "%"
+  updated_at: "2026-09-01"
+  source_note: "Rapat Dewan Gubernur (RDG) Bank Indonesia September 2026"
+  basis: "manual"
+
+inflation_idr_yoy:
+  value: 2.12
+  unit: "%"
+  updated_at: "2026-09-01"
+  source_note: "Badan Pusat Statistik (BPS) RI Rilis September 2026"
+  basis: "manual"
+
+fed_funds_rate:
+  value: 5.25
+  unit: "%"
+  updated_at: "2026-09-01"
+  source_note: "Federal Reserve FOMC Benchmark Target"
+  basis: "manual"

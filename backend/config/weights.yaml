@@ -1,0 +1,27 @@
+# Confluence Dimension Weights by Investment Horizon
+swing:
+  technical: 0.35
+  candlestick_volume: 0.20
+  buy_sell_pressure: 0.15
+  sentiment: 0.10
+  market_macro: 0.10
+  fundamental: 0.05
+  valuation: 0.05
+
+positional:
+  technical: 0.20
+  candlestick_volume: 0.10
+  buy_sell_pressure: 0.10
+  sentiment: 0.10
+  market_macro: 0.15
+  fundamental: 0.20
+  valuation: 0.15
+
+long_term:
+  technical: 0.05
+  candlestick_volume: 0.00
+  buy_sell_pressure: 0.05
+  sentiment: 0.05
+  market_macro: 0.10
+  fundamental: 0.40
+  valuation: 0.35

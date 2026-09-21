@@ -1,0 +1,63 @@
+/* ==========================================================================
+   PRINT STYLESHEET
+   ========================================================================== */
+@media print {
+  /* Sembunyikan elemen non-cetak */
+  .report-top-actions,
+  .chat-sidebar,
+  .chat-mobile-bar,
+  .composer-wrapper,
+  .setup-card,
+  button,
+  .btn {
+    display: none !important;
+  }
+
+  body, html, #app, #report-screen {
+    background: #ffffff !important;
+    color: #000000 !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .report-container {
+    max-width: 100% !important;
+    gap: 20px !important;
+  }
+
+  .report-hero-card,
+  .star-section,
+  .report-card,
+  .grammar-item,
+  .skill-card,
+  .improved-answer-box {
+    box-shadow: none !important;
+    border: 1px solid #cccccc !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Tampilkan semua detail STAR saat dicetak */
+  .star-detail-panel {
+    display: flex !important;
+    margin-top: 10px !important;
+    border: 1px solid #e0e0e0 !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  details.answer-review-accordion {
+    border: 1px solid #cccccc !important;
+  }
+
+  details.answer-review-accordion[open],
+  details.answer-review-accordion {
+    display: block !important;
+  }
+
+  .answer-review-list {
+    display: flex !important;
+  }
+}
